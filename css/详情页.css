@@ -1,0 +1,186 @@
+html, body, i, p, span, img, ul, li, h2 {
+    margin: 0;
+    padding: 0;
+}
+html,body{
+	font-size: 37.5px;
+	font-family: PingFangSC-Regular,PingFangSC-Light;
+}
+ul {
+	list-style: none;
+}
+body{
+	background-color:#f1ececb0;
+}
+.teacher-item[data-v-4d0d8b7e] {
+    background: #fff;
+    height: 2.93333rem;
+    padding-left: 2.93333rem;
+    position: relative;
+    margin-bottom: 0.26667rem;
+}
+.teacher-item img[data-v-4d0d8b7e]:nth-of-type(1) {
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem;
+    width: 2.13333rem;
+    height: 2.13333rem;
+}
+.a .teacher-info-text[data-v-4d0d8b7e], .teacher-item .teacher-info-text[data-v-4d0d8b7e] {
+    height: 2.93333rem;
+    font-size: 0;
+}
+.a .detail[data-v-4d0d8b7e], .teacher-item .detail[data-v-4d0d8b7e] {
+    width: 100%;
+    display: inline-block;
+    margin-top: 0.48rem;
+}
+.teacher-item .detail .name[data-v-4d0d8b7e] {
+    font-size: 0.4rem;
+    color: #262323;
+}
+.a .detail span[data-v-4d0d8b7e]:nth-of-type(1), .teacher-item .detail span[data-v-4d0d8b7e]:nth-of-type(1) {
+    margin-left: 0;
+}
+.a .detail .sub-tag[data-v-4d0d8b7e], .teacher-item .detail .sub-tag[data-v-4d0d8b7e] {
+    font-size: 0.32rem;
+    display: inline-block;
+    padding: 0 0.10667rem;
+    color: #fff;
+    border-radius: 0.08rem;
+    background: #52c644;
+    border: 1px solid #52c644;
+}
+.a .detail span[data-v-4d0d8b7e], .teacher-item .detail span[data-v-4d0d8b7e] {
+    margin-left: 0.10667rem;
+}
+ .teacher-item .detail .grade-tag[data-v-4d0d8b7e] {
+    font-size: 0.32rem;
+    display: inline-block;
+    padding: 0 0.10667rem;
+    border-radius: 0.08rem;
+    border: 1px solid #097c25;
+    color: #097c25;
+}
+.a .detail .teach-times[data-v-4d0d8b7e], .teacher-item .detail .teach-times[data-v-4d0d8b7e] {
+    font-size: 0.34667rem;
+    color: #ee4034;
+    float: right;
+    margin-right: 0.4rem;
+}
+.teacher-item .school[data-v-4d0d8b7e] {
+    margin-top: 0.13333rem;
+}
+.a .school span[data-v-4d0d8b7e], .teacher-item .school span[data-v-4d0d8b7e] {
+    font-size: 0.34667rem;
+    color: #888;
+    margin-left: 0.10667rem;
+}
+.a .accept span[data-v-4d0d8b7e]:nth-of-type(1), .teacher-item .accept span[data-v-4d0d8b7e]:nth-of-type(1) {
+    margin-left: 0;
+}
+.a .accept span[data-v-4d0d8b7e], .teacher-item .accept span[data-v-4d0d8b7e] {
+    font-size: 0.34667rem;
+    color: #262323;
+    margin-left: 0.10667rem;
+    display: inline-block;
+    padding-left: 0.42667rem;
+    background-image: url("../images/selected.png");
+    background-repeat: no-repeat;
+    background-size: 0.4rem 0.4rem;
+    background-position: 0rem 0.05333rem;
+    margin-top:0.3rem; 
+}
+.teacher-item i[data-v-4d0d8b7e] {
+    font-style: normal;
+    font-size: 0.34667rem;
+    color: #888;
+    position: absolute;
+    right: 0.4rem;
+    bottom: 0.4rem;
+}
+.assess-teacher-info .title {
+    font-size: 0.4rem;
+    color: #262323;
+    display: inline-block;
+    padding-left: 0.48rem;
+    background-repeat: no-repeat;
+    background-size: 0.4rem 0.4rem;
+    background-position: 0 0.05333rem;
+}
+.content p{
+	font-size: 0.35rem;
+	color: #888;
+    padding: 0 0.55rem;
+}
+.teach-title  {
+	color: #000;
+	font-size: 0.4rem;
+}
+hr{
+	width: 90%;
+}
+.teacher-item{
+	margin-bottom: 1rem;
+	background-color: #fff;
+}
+.info-box{
+	background-color: #fff;
+}
+.title{
+	background-image: url("../images/ben.png");
+}
+.introduce{
+    background-image: url("../images/re.png");
+}
+.reward{
+    background-image: url("../images/bei.png");
+}
+.title,.introduce,.reward{
+	margin-left: 0.5rem;
+}
+.order-line {
+    width: 60%;
+    position: relative;
+    margin: 0.8rem auto 2.13333rem auto;
+}
+.order-line .order-text {
+    color: #9e9c9c;
+    position: absolute;
+    top: -0.26667rem;
+    left: 1.6rem;
+    font-size: 0.4rem;
+    background: #f5f5f5;
+    padding: 0 0.21333rem;
+}
+.order-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0;
+}
+.order-btn .collect {
+    width: 15%;
+    background: #49a775;
+    background-image: url("../images/xing.png");
+    background-repeat: no-repeat;
+    background-size: 0.53333rem 0.53333rem;
+    background-position: 0.48rem 0.16rem;
+}
+.order-btn .btn {
+    display: inline-block;
+    font-size: 0.4rem;
+    color: #fff;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    text-align: center;
+}
+.order-btn .collect span {
+    position: relative;
+    top: 0.32rem;
+    font-size: 0.34667rem;
+}
+.order-btn .order-now {
+    width: 85%;
+    background: #2dc072;
+}

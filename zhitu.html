@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script src="./js/vue.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<div id="container">
+	    <div class="header clearfix">
+			<div class="logo">
+				<img src="images/logo.png">
+			</div>
+			<div class="myPeople clearfix">
+				<img src="images/people.png">
+				<span>我的</span>
+			</div>
+		</div>
+		<div class="lunbo">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide" v-for="item in banner">
+			            <img :src="item.image" alt="">
+			        </div>
+			    </div>
+		  	</div>
+		</div>
+		<div class="option">
+			<ul class="clearfix">
+			    <li v-for="item in subjects">
+				    <a :href="'./xuanxiangka.html?id='+item.id+'&'+item.name+''" class="tiao">
+				    	<span class="people-img"><img :src="item.icon" alt=""></span>
+						<span class="class-name">{{ item.name }}</span>
+					</a>
+			    </li>
+			</ul>
+		</div>
+		<div class="hot-teacher">
+			热门教师
+		</div>
+		<div class="teacher-list">
+		    <div v-for="item in teacher" class="teacher-list-item">
+		        <!--  <a :href="'#/详情页/' + item.id"> -->
+		        <a class="teacher":href="'./xiangqing.html?id='+item.id"><div class="list-item">
+			    	<div class="teacher-img">
+							<img :src="item.image">
+				    </div>
+				    <div class="teacher-introduced">
+							<div class="box1 clearfix">
+								<span class="teacher-name">{{ item.realname }}</span>
+								<span class="class-box">
+									{{ item.subject[0].label }}
+								</span>
+								<div class="right">已授200课程</div>
+							</div>
+							<p class="teach-age">{{ item.teach_year }}年教龄</p>
+							<div class="label clearfix">
+								<div class="label-list clearfix">
+									<img src="images/true.png">
+									<span>专职教师</span>
+								</div>
+								<div class="label-list clearfix">
+									<img src="images/true.png">
+									<span>{{ item.type[0].label }}</span>
+								</div>
+								<div class="label-list clearfix">
+									<img src="images/true.png">
+									<span>{{ item.extend_tag[0].label }}</span>
+								</div>
+							</div>
+						</div>
+					</div></a>
+		    </div>
+			<!-- <div class="teacher-list-item">
+				<div class="list-item">
+					<div class="teacher-img">
+						<img src="images/teacher1.png">
+					</div>
+					<div class="teacher-introduced">
+						<div class="box1 clearfix">
+							<span class="teacher-name">陈老师</span>
+							<span class="class-box">
+								数学
+							</span>
+							<span class="kuang">
+								小
+							</span>
+							<span class="kuang">
+								初
+							</span>
+							<span class="kuang">
+								高
+							</span>
+							<div class="right">已授200课程</div>
+						</div>
+						<p class="teach-age">9年教龄</p>
+						<div class="label clearfix">
+							<div class="label-list clearfix">
+								<img src="images/true.png">
+								<span>专职教师</span>
+							</div>
+							<div class="label-list clearfix">
+								<img src="images/true.png">
+								<span>专职教师</span>
+							</div>
+							<div class="label-list clearfix">
+								<img src="images/true.png">
+								<span>专职教师</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="teacher-list-item">
+				<div class="list-item">
+					<div class="teacher-img">
+						<img src="images/teacher1.png">
+					</div>
+					<div class="teacher-introduced">
+						<div class="box1 clearfix">
+							<span class="teacher-name">陈老师</span>
+							<span class="class-box">
+								数学
+							</span>
+							<span class="kuang">
+								小
+							</span>
+							<span class="kuang">
+								初
+							</span>
+							<span class="kuang">
+								高
+							</span>
+							<div class="right">已授200课程</div>
+						</div>
+						<p class="teach-age">9年教龄</p>
+						<div class="label clearfix">
+							<div class="label-list clearfix">
+								<img src="images/true.png">
+								<span>专职教师</span>
+							</div>
+							<div class="label-list clearfix">
+								<img src="images/true.png">
+								<span>专职教师</span>
+							</div>
+							<div class="label-list clearfix">
+								<img src="images/true.png">
+								<span>专职教师</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="teacher-list-item">
+				<div class="list-item">
+					<div class="teacher-img">
+						<img src="images/teacher1.png">
+					</div>
+					<div class="teacher-introduced">
+						<div class="box1 clearfix">
+							<span class="teacher-name">陈老师</span>
+							<span class="class-box">
+								数学
+							</span>
+							<span class="kuang">
+								小
+							</span>
+							<span class="kuang">
+								初
+							</span>
+							<span class="kuang">
+								高
+							</span>
+							<div class="right">已授200课程</div>
+						</div>
+						<p class="teach-age">9年教龄</p>
+						<div class="label clearfix">
+							<div class="label-list clearfix">
+								<img src="images/true.png">
+								<span>专职教师</span>
+							</div>
+							<div class="label-list clearfix">
+								<img src="images/true.png">
+								<span>专职教师</span>
+							</div>
+							<div class="label-list clearfix">
+								<img src="images/true.png">
+								<span>专职教师</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script src="js/swiper-3.4.2.min.js"></script>
+</body>
+</html>

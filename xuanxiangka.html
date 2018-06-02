@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>xuanxiangka</title>
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/xuanxiangka.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script src="./js/vue.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+</head>
+<body>
+    <div id="app"> 
+        <ul class="tab">
+	        <li @click="clickGrade" :class="isShowGrade ? 'selected' : ''">{{ grade }}</li>
+	        <li @click="clickSubject" :class="isShowSubject? 'selected' : ''">{{ subject }}</li>
+	        <li @click="clickType" :class="isShowType ? 'selected' : ''">{{ teacherType }}</li>
+	    </ul>
+	    <div v-if="condition" :class="isShowAllSelect ? 'show' : 'hide'" class="tips">
+		    <div :class="isShowGrade ? 'show' : 'hide'" class="content">
+		        <span :class="item.isSelected ? 'selected' : ''" class="xuan" v-for="item in condition.grade" @click="clickItem(item)">{{ item.label }}</span>
+		    </div>
+		    <div :class="isShowSubject ? 'show' : 'hide'" class="content">
+		        <span :class="item.isSelected ? 'selected' : ''" class="xuan" v-for="item in condition.subject" @click="clickItem(item)">{{ item.label }}</span>
+		    </div>
+		    <div :class="isShowType ? 'show' : 'hide'" class="content">
+		        <span :class="item.isSelected ? 'selected' : ''" class="xuan" v-for="item in condition.type" @click="clickItem(item)">{{ item.label }}</span>
+		    </div>
+	    </div>   
+        
+        <div class="bottom">
+        	 <div class="teacher-list-item" v-for="items in teacherList">
+				<div class="list-item">
+					<div class="teacher-img">
+						<img :src="items.image">
+					</div>
+					<div class="teacher-introduced">
+						<div class="box1 clearfix">
+							<span class="teacher-name">{{ items.realname}}</span>
+							<span class="class-box" v-for="itemIn in items.subject">
+									{{ itemIn.label }}
+							</span>
+							<div class="right">已授200课程</div>
+						</div>
+						<p class="teach-age">{{ items.teach_year }}年教龄</p>
+						<div class="label clearfix">
+							<div class="label-list clearfix">
+								<img src="images/true.png">
+								<span>专职教师</span>
+							</div>
+							<div class="label-list clearfix">
+								<img src="images/true.png">
+								<span v-for="itemType in items.type">{{ itemType.label }}</span>
+							</div>
+							<div class="label-list clearfix">
+								<img src="images/true.png">
+								<span v-for="itemTend in items.extend_tag">{{ itemTend.label }}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<script type="text/javascript" src="js/xuanxiangka.js"></script>
+	<script src="js/swiper-3.4.2.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+body,html,p,span,img,hr{
+	margin:0;
+	padding:0;
+}
+body,html{
+	width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    font-size: 41.2px;
+}
+.teacher-item{
+	background: #fff;
+    height: 2.93333rem;
+    padding-left: 2.93333rem;
+    position: relative;
+    margin-bottom: 0.26667rem;
+}
+.teacher-img{
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem;
+    width: 2.13333rem;
+    height: 2.13333rem;
+}
+.teacher-img img{
+   width:100%;
+   height: 100%；
+}
+.teacher-info{
+	height: 2.93333rem;
+	font-size: 0;
+}
+.info{
+	width: 100%;
+    display: inline-block;
+    margin-top: 0.48rem;
+}
+.name{
+	font-size: 0.4rem;
+    color: #262323;
+}
+.sub{
+	font-size: 0.32rem;
+    display: inline-block;
+    padding: 0 0.10667rem;
+    color: #fff;
+    border-radius: 0.08rem;
+    background: #52c644;
+    border: 1px solid #52c644;
+    margin-left: 0.10667rem;
+}
+.label{
+	font-size: 0.32rem;
+    display: inline-block;
+    padding: 0 0.10667rem;
+    border-radius: 0.08rem;
+    border: 1px solid #097c25;
+    color: #097c25;
+    margin-left: 0.10667rem;
+}
+.price{
+	font-size: 0.34667rem;
+    color: #ee4034;
+    float: right;
+    margin-right: 0.4rem;
+}
+.teach-year{
+	margin-top: 0.13333rem;
+}
+.teach{
+	font-size: 0.34667rem;
+    color: #888;
+}
+.accept{
+	position: absolute;
+	bottom:.4rem;
+	font-size: 0.34667rem;
+    color: #262323;
+    margin-left: 0.10667rem;
+    display: inline-block;
+    padding-left: 0.42667rem;
+    background-image: url(../images/dui.png);
+    background-repeat: no-repeat;
+    background-size: 0.4rem 0.4rem;
+    background-position: 0rem 0.05333rem;
+}
+.time{
+	font-style: normal;
+    font-size: 0.34667rem;
+    color: #888;
+    position: absolute;
+    right: 0.4rem;
+    bottom: 0.4rem;
+}
+.info-box{
+	background: #fff;
+    padding: 0.4rem 0 0.18667rem 0;
+    margin-bottom: 0.26667rem;
+}
+.info-intro{
+    padding:0 0.4rem;
+    font-size: 0;
+}
+.title{
+	font-size: 0.4rem;
+    color: #262323;
+    display: inline-block;
+    padding-left: 0.48rem;
+    background-repeat: no-repeat;
+    background-size: 0.4rem 0.4rem;
+    background-position: 0 0.05333rem;
+}
+.info-intro .intro{
+	background-image: url(../images/intro.png);
+}
+.info-intro .exprience{
+	background-image:url(../images/exprience.png); 
+}
+.info-intro .example{
+	background-image: url(../images/example.png);
+}
+.item{
+	padding: 0.21333rem 0 0.21333rem 0.4rem;
+    font-size: 0.34667rem;
+    color: #888;
+    border-bottom: 1px solid #d8dded;
+}
+.item:last-child{
+    border-bottom: none;
+}
+.item-title{
+	font-size: 0.34667rem;
+    color: #2b2b2b;
+}
+.order{
+	width: 60%;
+    position: relative;
+    margin: 0.8rem auto 2.13333rem auto;
+}
+.order-text{
+	color: #9e9c9c;
+    position: absolute;
+    top: -0.26667rem;
+    left: 1.6rem;
+    font-size: 0.4rem;
+    background: #f5f5f5;
+    padding: 0 0.21333rem;
+}
+.order-btn{
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0;
+}
+.btn-save{
+	width: 15%;
+    background: #49a775;
+    background-image: url(../images/save.png);
+    background-repeat: no-repeat;
+    background-size: 0.53333rem 0.53333rem;
+    background-position: 0.48rem 0.16rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.4rem;
+    color: #fff;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    text-align: center;
+}
+.btn-save span{
+	position: relative;
+    top: 0.32rem;
+    font-size: 0.34667rem;
+}
+.btn-now{
+	width: 85%;
+    background: #2dc072;
+    display: inline-block;
+    font-size: 0.4rem;
+    color: #fff;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    text-align: center;
+}

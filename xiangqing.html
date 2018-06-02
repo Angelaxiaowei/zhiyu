@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情页</title>
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/详情页.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div class="teacher-detail">
+            <div data-v-4d0d8b7e class="teacher-item">
+            	<!-- <img data-v-4d0d8b7e src="http://api.zhituteam.com/upload/userimage/7a899e510fb30f2400a44540c195d143ad4b03b2.jpg" alt> -->
+            	<img :src="list.image" data-v-4d0d8b7e>
+            	<div data-v-4d0d8b7e class="teacher-info-text">
+            		<p data-v-4d0d8b7e class="detail">
+            			<span data-v-4d0d8b7e class="name">{{ list.realname }}</span>
+            			<span data-v-4d0d8b7e class="sub-tag" v-for="item in list.subject">{{ item.label}}</span>
+            			<span data-v-4d0d8b7e class="grade-tag" v-for="item in list.grade">{{ item.label}}</span>
+            			<span data-v-4d0d8b7e class="teach-times">{{list.price}}</span>
+            		</p>
+            		<p data-v-4d0d8b7e class="school">
+            			<span data-v-4d0d8b7e>3年教龄</span>
+            		</p>
+            		<p data-v-4d0d8b7e class="accept">
+            			<span data-v-4d0d8b7e v-for="item in list.type">{{ item.label}}</span>
+            		</p>
+            		<i data-v-4d0d8b7e>已授课22小时</i>
+            	</div>
+            </div>
+            <div class="info-box">
+            	<div class="assess-teacher-info">
+            		<p class="title introduce">个人简介</p>
+            		<div class="content">
+            			<p>{{list.intro}}</p>
+            		</div>
+            	</div>
+            	<div class="assess-teacher-info">
+            		<p class="title">教学经历</p>
+            		<div class="content">
+            			<p v-for="item in list.teacher_experience">{{ item.title}}</p>
+            		</div>
+            	</div>
+            	<div class="assess-teacher-info">
+            		<p class="title reward">成功案例</p>
+            		<div class="content teach-case-content" v-for="item in list.teacher_case">
+            			<p class="teach-title">{{ item.title}}</p>
+            			<p>{{ item.content}}</p>
+            		</div>
+            		<hr>
+            		<!-- <div class="content">
+            			<p class="teach-title">{{ list.teacher_case[1].title}}</p>
+            			<p>{{ list.teacher_case[1].content}}</p>
+            		</div> -->
+            	</div>
+            </div>
+            <div class="order-line">
+            	<div class="order-text">满意就预约吧</div>
+            	<hr>
+            </div>
+            <div class="order-btn">
+            	<div class="btn collect">
+            		<span>收藏</span>
+            	</div>
+            	<div class="btn order-now">预约试讲</div>
+            </div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/xiangqing.js"></script>
+</body>
+</html>
